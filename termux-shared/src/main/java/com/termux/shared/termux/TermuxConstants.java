@@ -364,7 +364,7 @@ public final class TermuxConstants {
     /** Termux:API app name */
     public static final String TERMUX_API_APP_NAME = "Termux:API"; // Default: "Termux:API"
     /** Termux:API app package name */
-    public static final String TERMUX_API_PACKAGE_NAME = TERMUX_PACKAGE_NAME + ".api"; // Default: "com.termux.api"
+    public static final String TERMUX_API_PACKAGE_NAME = "com.termux.api.nix"; // Default: "com.termux.api.nix"
     /** Termux:API GitHub repo name */
     public static final String TERMUX_API_GITHUB_REPO_NAME = "termux-api"; // Default: "termux-api"
     /** Termux:API GitHub repo url */
@@ -372,7 +372,7 @@ public final class TermuxConstants {
     /** Termux:API GitHub issues repo url */
     public static final String TERMUX_API_GITHUB_ISSUES_REPO_URL = TERMUX_API_GITHUB_REPO_URL + "/issues"; // Default: "https://github.com/termux/termux-api/issues"
     /** Termux:API F-Droid package url */
-    public static final String TERMUX_API_FDROID_PACKAGE_URL = FDROID_PACKAGES_BASE_URL + "/" + TERMUX_API_PACKAGE_NAME; // Default: "https://f-droid.org/en/packages/com.termux.api"
+    public static final String TERMUX_API_FDROID_PACKAGE_URL = FDROID_PACKAGES_BASE_URL + "/" + TERMUX_API_PACKAGE_NAME; // Default: "https://f-droid.org/en/packages/com.termux.api.nix"
 
 
     /** Termux:Boot app name */
@@ -704,7 +704,7 @@ public final class TermuxConstants {
     public static final String TERMUX_DEFAULT_PREFERENCES_FILE_BASENAME_WITHOUT_EXTENSION = TERMUX_PACKAGE_NAME + "_preferences"; // Default: "com.termux_preferences"
 
     /** Termux:API app default SharedPreferences file basename without extension */
-    public static final String TERMUX_API_DEFAULT_PREFERENCES_FILE_BASENAME_WITHOUT_EXTENSION = TERMUX_API_PACKAGE_NAME + "_preferences"; // Default: "com.termux.api_preferences"
+    public static final String TERMUX_API_DEFAULT_PREFERENCES_FILE_BASENAME_WITHOUT_EXTENSION = TERMUX_API_PACKAGE_NAME + "_preferences"; // Default: "com.termux.api.nix_preferences"
 
     /** Termux:Boot app default SharedPreferences file basename without extension */
     public static final String TERMUX_BOOT_DEFAULT_PREFERENCES_FILE_BASENAME_WITHOUT_EXTENSION = TERMUX_BOOT_PACKAGE_NAME + "_preferences"; // Default: "com.termux.boot_preferences"
@@ -1201,10 +1201,10 @@ public final class TermuxConstants {
     public static final class TERMUX_API_APP {
 
         /** Termux:API app main activity name. */
-        public static final String TERMUX_API_MAIN_ACTIVITY_NAME = TERMUX_API_PACKAGE_NAME + ".activities.TermuxAPIMainActivity"; // Default: "com.termux.api.activities.TermuxAPIMainActivity"
+        public static final String TERMUX_API_MAIN_ACTIVITY_NAME = TERMUX_API_PACKAGE_NAME + ".activities.TermuxAPIMainActivity"; // Default: "com.termux.api.nix.activities.TermuxAPIMainActivity"
 
         /** Termux:API app launcher activity name. This is an `activity-alias` for {@link #TERMUX_API_MAIN_ACTIVITY_NAME} used for launchers with {@link Intent#CATEGORY_LAUNCHER}. */
-        public static final String TERMUX_API_LAUNCHER_ACTIVITY_NAME = TERMUX_API_PACKAGE_NAME + ".activities.TermuxAPILauncherActivity"; // Default: "com.termux.api.activities.TermuxAPILauncherActivity"
+        public static final String TERMUX_API_LAUNCHER_ACTIVITY_NAME = TERMUX_API_PACKAGE_NAME + ".activities.TermuxAPILauncherActivity"; // Default: "com.termux.api.nix.activities.TermuxAPILauncherActivity"
 
     }
 
